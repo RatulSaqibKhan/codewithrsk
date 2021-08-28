@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
-const webpack = require('webpack')
+const webpack = require('webpack');
+const config = require('./webpack.config')
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -10,7 +11,7 @@ const webpack = require('webpack')
  | file for the application as well as bundling up all the JS files.
  |
  */
-
+mix.webpackConfig(config).sourceMaps();
 mix.js('resources/js/app.js', 'public/js')
   .vue({ version: 3 })
   .webpackConfig((webpack) => {
