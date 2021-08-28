@@ -19,5 +19,9 @@
         "tailwindcss": "^2.2.8",
         "vue": "^3.2.6",
         "vue-loader": "^16.5.0"
+    },
+    "dependencies": {
+        "@heroicons/vue": "^1.0.4",
+        "vue-awesome": "^4.3.1"
     }
 }
